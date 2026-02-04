@@ -1,0 +1,32 @@
+name: "✨ Feature/Task"
+description: "새로운 기능 개발 또는 백엔드 업무 단위를 기록합니다."
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🚀 새로운 기능을 제안하거나 작업을 정의합니다.
+  - type: textarea
+    id: overview
+    attributes:
+      label: "📝 개요"
+      description: "구현하려는 기능에 대해 간략하게 설명해주세요."
+      placeholder: "예: 사용자 로그인 시 JWT 발급 로직 추가"
+    validations:
+      required: true
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: "🛠 작업 상세 내용"
+      options:
+        - label: "Controller API 엔드포인트 설계"
+        - label: "Service 비즈니스 로직 구현"
+        - label: "Repository DB 쿼리 작성"
+        - label: "단위 테스트(JUnit5) 작성"
+  - type: textarea
+    id: related
+    attributes:
+      label: "🔗 관련 데이터"
+      description: "API 명세나 관련 이슈 번호를 적어주세요."
+      placeholder: "예: #123, Swagger 링크 등"

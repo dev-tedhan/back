@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
     @GetMapping("login")
     public String login(){
-//        작업 끝
+//        버그 수정 완료
         return "login";
     }
 }

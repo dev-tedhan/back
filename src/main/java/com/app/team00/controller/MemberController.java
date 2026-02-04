@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
     @GetMapping("login")
     public String login(){
+//        작업 끝
         return "login";
     }
 }
